@@ -7,6 +7,11 @@
 <body>
     <h1>Welcome to Whether API</h1>
     <p>URL Format: http://127.0.0.1:5000/api/v1/station/date</p>
-    <p>URl Example: http://127.0.0.1:5000/api/v1/10/1980-10-15</p>
+    <p>For station with date: http://127.0.0.1:5000/api/v1/10/1980-10-15</p>
+    <p>For station for all data: http://127.0.0.1:5000/api/v1/10</p>
+    <p>For station for all data with particular year: http://127.0.0.1:5000/api/v1/year/10/1980</p>
+    <!--safe keyword is important here without that it won't render html code properly-->
+    <p>{{data|safe}}</p>
+
 </body>
 </html>
